@@ -1,0 +1,1424 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head></head><body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+    
+    
+    
+
+
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput">
+<h1>Module Nine Project<a rel="noopener" class="anchor-link" href="#Module-Nine-Project">&#182;</a></h1><p>For the module nine project you are required to produce coding samples in accordance with the requirements in the project guidelines and rubric. This Notebook has been pre-created as a shell for your project submission.</p>
+<p>Once your code is complete, you will download this notebook as an HTML file by clicking <strong>File</strong>, then <strong>Download As</strong>, then <strong>HTML (.html)</strong> from the Jupyter menu bar. Validate that your code and outputs are rendered in the html file before submission.</p>
+<div class="alert alert-block alert-danger">
+    <span style="color:black;"><b><i>Missing Blocks:</i></b> Ensure that you have clicked <b><mark>Run</mark></b> for all blocks before downloading as an HTML file or the block may be missing from your submission.</span>
+</div>
+<h3>Data Source Information<a rel="noopener" class="anchor-link" href="#Data-Source-Information">&#182;</a></h3><p>Below are some example reputable data sources that you can use to collect your minimum of two data sets from:</p>
+<ul>
+<li><a rel="noopener" href="https://datasetsearch.research.google.com/">https://datasetsearch.research.google.com/</a></li>
+<li><a rel="noopener" href="https://www.kaggle.com/datasets">https://www.kaggle.com/datasets</a></li>
+<li><a rel="noopener" href="https://data.gov/">https://data.gov/</a></li>
+<li><a rel="noopener" href="https://www.census.gov/data.html">https://www.census.gov/data.html</a></li>
+<li><a rel="noopener" href="https://www.bls.gov/data/">https://www.bls.gov/data/</a></li>
+<li><a rel="noopener" href="https://databank.worldbank.org/databases">https://databank.worldbank.org/databases</a></li>
+<li><a rel="noopener" href="https://www.ncei.noaa.gov/access/search/index">https://www.ncei.noaa.gov/access/search/index</a></li>
+<li><a rel="noopener" href="https://www.epa.gov/data">https://www.epa.gov/data</a></li>
+<li><a rel="noopener" href="https://www.pewresearch.org/tools-and-datasets/">https://www.pewresearch.org/tools-and-datasets/</a></li>
+<li><a rel="noopener" href="https://www.who.int/data/">https://www.who.int/data/</a></li>
+<li><a rel="noopener" href="https://dataverse.harvard.edu/">https://dataverse.harvard.edu/</a></li>
+<li><a rel="noopener" href="https://search.cdc.gov/search/?query=dataset&amp;dpage=1">https://search.cdc.gov/search/?query=dataset&amp;dpage=1</a></li>
+<li><a rel="noopener" href="https://data.fivethirtyeight.com/">https://data.fivethirtyeight.com/</a></li>
+<li><a rel="noopener" href="https://www.gdeltproject.org/data.html">https://www.gdeltproject.org/data.html</a></li>
+<li><a rel="noopener" href="https://datahub.io/collections">https://datahub.io/collections</a></li>
+</ul>
+<p>*<strong>Note: this list is not all inclusive, if you have a reputable data set that you have collected, or would like to use, please ensure to upload the data. All data sets will need to be documented in your submission as to the source through the creation of a citation.</strong>*</p>
+<div class="alert alert-block alert-success">
+    <span style="color:black;"><b><i>To Begin:</i></b> replace each <b>data_file_#</b> entry sample data path with the path to your selected data sets.</span>
+</div>
+<p>You are welcome to use more than two data sets, create an entry for each as applicable for each data set. Ensure that you create comments that provide citations for the data sets you have selected for use. When working through your submission, keep in mind that you will need to have choosen two separate groups of stakeholders to create your final visualizations.</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&#160;[1]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor">
+     <div class="CodeMirror cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Placeholder for data citation information</span>
+<span class="n">data_file_1</span> <span class="o">=</span> <span class="s2">&quot;data/education_employment.csv&quot;</span>
+<span class="n">data_file_2</span> <span class="o">=</span> <span class="s2">&quot;data/job_salary_prediction_dataset.csv&quot;</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput">
+<h2>Installing Required Packages<a rel="noopener" class="anchor-link" href="#Installing-Required-Packages">&#182;</a></h2><p>If you have additional packages that you would like to use or install, add them to the <strong>requirements.txt</strong> file then run the next two blocks.</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&#160;[2]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor">
+     <div class="CodeMirror cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>pip
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output">
+<pre>Requirement already satisfied: pip in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (26.0.1)
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&#160;[3]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor">
+     <div class="CodeMirror cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output">
+<pre>Requirement already satisfied: ydata-profiling==4.16.1 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from -r requirements.txt (line 1)) (4.16.1)
+Requirement already satisfied: openpyxl==3.1.3 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from -r requirements.txt (line 2)) (3.1.3)
+Requirement already satisfied: scipy&lt;1.16,&gt;=1.4.1 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from ydata-profiling==4.16.1-&gt;-r requirements.txt (line 1)) (1.10.1)
+Requirement already satisfied: pandas!=1.4.0,&lt;3.0,&gt;1.1 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from ydata-profiling==4.16.1-&gt;-r requirements.txt (line 1)) (2.0.1)
+Requirement already satisfied: matplotlib&lt;=3.10,&gt;=3.5 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from ydata-profiling==4.16.1-&gt;-r requirements.txt (line 1)) (3.7.1)
+Requirement already satisfied: pydantic&gt;=2 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from ydata-profiling==4.16.1-&gt;-r requirements.txt (line 1)) (2.12.5)
+Requirement already satisfied: PyYAML&lt;6.1,&gt;=5.0.0 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from ydata-profiling==4.16.1-&gt;-r requirements.txt (line 1)) (6.0)
+Requirement already satisfied: jinja2&lt;3.2,&gt;=2.11.1 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from ydata-profiling==4.16.1-&gt;-r requirements.txt (line 1)) (3.1.2)
+Requirement already satisfied: visions&lt;0.8.2,&gt;=0.7.5 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from visions[type_image_path]&lt;0.8.2,&gt;=0.7.5-&gt;ydata-profiling==4.16.1-&gt;-r requirements.txt (line 1)) (0.8.1)
+Requirement already satisfied: numpy&lt;2.2,&gt;=1.16.0 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from ydata-profiling==4.16.1-&gt;-r requirements.txt (line 1)) (1.26.4)
+Requirement already satisfied: htmlmin==0.1.12 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from ydata-profiling==4.16.1-&gt;-r requirements.txt (line 1)) (0.1.12)
+Requirement already satisfied: phik&lt;0.13,&gt;=0.11.1 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from ydata-profiling==4.16.1-&gt;-r requirements.txt (line 1)) (0.12.5)
+Requirement already satisfied: requests&lt;3,&gt;=2.24.0 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from ydata-profiling==4.16.1-&gt;-r requirements.txt (line 1)) (2.30.0)
+Requirement already satisfied: tqdm&lt;5,&gt;=4.48.2 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from ydata-profiling==4.16.1-&gt;-r requirements.txt (line 1)) (4.67.3)
+Requirement already satisfied: seaborn&lt;0.14,&gt;=0.10.1 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from ydata-profiling==4.16.1-&gt;-r requirements.txt (line 1)) (0.12.2)
+Requirement already satisfied: multimethod&lt;2,&gt;=1.4 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from ydata-profiling==4.16.1-&gt;-r requirements.txt (line 1)) (1.12)
+Requirement already satisfied: statsmodels&lt;1,&gt;=0.13.2 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from ydata-profiling==4.16.1-&gt;-r requirements.txt (line 1)) (0.14.6)
+Requirement already satisfied: typeguard&lt;5,&gt;=3 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from ydata-profiling==4.16.1-&gt;-r requirements.txt (line 1)) (4.5.1)
+Requirement already satisfied: imagehash==4.3.1 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from ydata-profiling==4.16.1-&gt;-r requirements.txt (line 1)) (4.3.1)
+Requirement already satisfied: wordcloud&gt;=1.9.3 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from ydata-profiling==4.16.1-&gt;-r requirements.txt (line 1)) (1.9.6)
+Requirement already satisfied: dacite&gt;=1.8 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from ydata-profiling==4.16.1-&gt;-r requirements.txt (line 1)) (1.9.2)
+Requirement already satisfied: numba&lt;=0.61,&gt;=0.56.0 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from ydata-profiling==4.16.1-&gt;-r requirements.txt (line 1)) (0.61.0)
+Requirement already satisfied: et-xmlfile in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from openpyxl==3.1.3-&gt;-r requirements.txt (line 2)) (2.0.0)
+Requirement already satisfied: PyWavelets in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from imagehash==4.3.1-&gt;ydata-profiling==4.16.1-&gt;-r requirements.txt (line 1)) (1.9.0)
+Requirement already satisfied: pillow in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from imagehash==4.3.1-&gt;ydata-profiling==4.16.1-&gt;-r requirements.txt (line 1)) (9.5.0)
+Requirement already satisfied: MarkupSafe&gt;=2.0 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from jinja2&lt;3.2,&gt;=2.11.1-&gt;ydata-profiling==4.16.1-&gt;-r requirements.txt (line 1)) (2.1.2)
+Requirement already satisfied: contourpy&gt;=1.0.1 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from matplotlib&lt;=3.10,&gt;=3.5-&gt;ydata-profiling==4.16.1-&gt;-r requirements.txt (line 1)) (1.0.7)
+Requirement already satisfied: cycler&gt;=0.10 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from matplotlib&lt;=3.10,&gt;=3.5-&gt;ydata-profiling==4.16.1-&gt;-r requirements.txt (line 1)) (0.11.0)
+Requirement already satisfied: fonttools&gt;=4.22.0 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from matplotlib&lt;=3.10,&gt;=3.5-&gt;ydata-profiling==4.16.1-&gt;-r requirements.txt (line 1)) (4.39.3)
+Requirement already satisfied: kiwisolver&gt;=1.0.1 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from matplotlib&lt;=3.10,&gt;=3.5-&gt;ydata-profiling==4.16.1-&gt;-r requirements.txt (line 1)) (1.4.4)
+Requirement already satisfied: packaging&gt;=20.0 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from matplotlib&lt;=3.10,&gt;=3.5-&gt;ydata-profiling==4.16.1-&gt;-r requirements.txt (line 1)) (23.0)
+Requirement already satisfied: pyparsing&gt;=2.3.1 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from matplotlib&lt;=3.10,&gt;=3.5-&gt;ydata-profiling==4.16.1-&gt;-r requirements.txt (line 1)) (3.0.9)
+Requirement already satisfied: python-dateutil&gt;=2.7 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from matplotlib&lt;=3.10,&gt;=3.5-&gt;ydata-profiling==4.16.1-&gt;-r requirements.txt (line 1)) (2.8.2)
+Requirement already satisfied: llvmlite&lt;0.45,&gt;=0.44.0dev0 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from numba&lt;=0.61,&gt;=0.56.0-&gt;ydata-profiling==4.16.1-&gt;-r requirements.txt (line 1)) (0.44.0)
+Requirement already satisfied: pytz&gt;=2020.1 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from pandas!=1.4.0,&lt;3.0,&gt;1.1-&gt;ydata-profiling==4.16.1-&gt;-r requirements.txt (line 1)) (2023.3)
+Requirement already satisfied: tzdata&gt;=2022.1 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from pandas!=1.4.0,&lt;3.0,&gt;1.1-&gt;ydata-profiling==4.16.1-&gt;-r requirements.txt (line 1)) (2023.3)
+Requirement already satisfied: joblib&gt;=0.14.1 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from phik&lt;0.13,&gt;=0.11.1-&gt;ydata-profiling==4.16.1-&gt;-r requirements.txt (line 1)) (1.2.0)
+Requirement already satisfied: charset-normalizer&lt;4,&gt;=2 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from requests&lt;3,&gt;=2.24.0-&gt;ydata-profiling==4.16.1-&gt;-r requirements.txt (line 1)) (2.1.1)
+Requirement already satisfied: idna&lt;4,&gt;=2.5 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from requests&lt;3,&gt;=2.24.0-&gt;ydata-profiling==4.16.1-&gt;-r requirements.txt (line 1)) (3.4)
+Requirement already satisfied: urllib3&lt;3,&gt;=1.21.1 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from requests&lt;3,&gt;=2.24.0-&gt;ydata-profiling==4.16.1-&gt;-r requirements.txt (line 1)) (2.0.2)
+Requirement already satisfied: certifi&gt;=2017.4.17 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from requests&lt;3,&gt;=2.24.0-&gt;ydata-profiling==4.16.1-&gt;-r requirements.txt (line 1)) (2023.5.7)
+Requirement already satisfied: patsy&gt;=0.5.6 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from statsmodels&lt;1,&gt;=0.13.2-&gt;ydata-profiling==4.16.1-&gt;-r requirements.txt (line 1)) (1.0.2)
+Requirement already satisfied: typing_extensions&gt;=4.14.0 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from typeguard&lt;5,&gt;=3-&gt;ydata-profiling==4.16.1-&gt;-r requirements.txt (line 1)) (4.15.0)
+Requirement already satisfied: attrs&gt;=19.3.0 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from visions&lt;0.8.2,&gt;=0.7.5-&gt;visions[type_image_path]&lt;0.8.2,&gt;=0.7.5-&gt;ydata-profiling==4.16.1-&gt;-r requirements.txt (line 1)) (23.1.0)
+Requirement already satisfied: networkx&gt;=2.4 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from visions&lt;0.8.2,&gt;=0.7.5-&gt;visions[type_image_path]&lt;0.8.2,&gt;=0.7.5-&gt;ydata-profiling==4.16.1-&gt;-r requirements.txt (line 1)) (3.6.1)
+Requirement already satisfied: puremagic in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from visions&lt;0.8.2,&gt;=0.7.5-&gt;visions[type_image_path]&lt;0.8.2,&gt;=0.7.5-&gt;ydata-profiling==4.16.1-&gt;-r requirements.txt (line 1)) (1.30)
+Requirement already satisfied: annotated-types&gt;=0.6.0 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from pydantic&gt;=2-&gt;ydata-profiling==4.16.1-&gt;-r requirements.txt (line 1)) (0.7.0)
+Requirement already satisfied: pydantic-core==2.41.5 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from pydantic&gt;=2-&gt;ydata-profiling==4.16.1-&gt;-r requirements.txt (line 1)) (2.41.5)
+Requirement already satisfied: typing-inspection&gt;=0.4.2 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from pydantic&gt;=2-&gt;ydata-profiling==4.16.1-&gt;-r requirements.txt (line 1)) (0.4.2)
+Requirement already satisfied: six&gt;=1.5 in /home/codio/.pyenv/versions/3.11.2/lib/python3.11/site-packages (from python-dateutil&gt;=2.7-&gt;matplotlib&lt;=3.10,&gt;=3.5-&gt;ydata-profiling==4.16.1-&gt;-r requirements.txt (line 1)) (1.16.0)
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput">
+<h2>Import the Required Packages<a rel="noopener" class="anchor-link" href="#Import-the-Required-Packages">&#182;</a></h2>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&#160;[4]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor">
+     <div class="CodeMirror cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span>
+
+<span class="kn">from</span> <span class="nn">ydata_profiling</span> <span class="kn">import</span> <span class="n">ProfileReport</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output">
+
+            <div>
+                <ins><a rel="noopener" href="https://ydata.ai/register">Upgrade to ydata-sdk</a></ins>
+                <p>
+                    Improve your data and profiling with ydata-sdk, featuring data quality scoring, redundancy detection, outlier identification, text validation, and synthetic data generation.
+                </p>
+            </div>
+            
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput">
+<h2>Loading the Data<a rel="noopener" class="anchor-link" href="#Loading-the-Data">&#182;</a></h2><p>Create entries to load your data for your submission.</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&#160;[5]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor">
+     <div class="CodeMirror cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># To Do: Load the datasets</span>
+<span class="n">df1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">data_file_1</span><span class="p">)</span>
+<span class="n">df2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">data_file_2</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput">
+<h2>Examining the Data<a rel="noopener" class="anchor-link" href="#Examining-the-Data">&#182;</a></h2><p>Create entries to conduct exploratory data analysis to identify key data points to include relevant data from your two data sets while evaluating the quality of your choosen data.</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&#160;[6]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor">
+     <div class="CodeMirror cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">df1</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+<span class="n">df1</span><span class="o">.</span><span class="n">dtypes</span>
+
+<span class="n">df2</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+<span class="n">df2</span><span class="o">.</span><span class="n">dtypes</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output">
+<pre>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 9 entries, 0 to 8
+Data columns (total 3 columns):
+ #   Column                            Non-Null Count  Dtype  
+---  ------                            --------------  -----  
+ 0   Educational attainment            9 non-null      object 
+ 1   Median usual weekly earnings ($)  9 non-null      object 
+ 2   Unemployment rate (%)             9 non-null      float64
+dtypes: float64(1), object(2)
+memory usage: 348.0+ bytes
+&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 250000 entries, 0 to 249999
+Data columns (total 10 columns):
+ #   Column            Non-Null Count   Dtype 
+---  ------            --------------   ----- 
+ 0   job_title         250000 non-null  object
+ 1   experience_years  250000 non-null  int64 
+ 2   education_level   250000 non-null  object
+ 3   skills_count      250000 non-null  int64 
+ 4   industry          250000 non-null  object
+ 5   company_size      250000 non-null  object
+ 6   location          250000 non-null  object
+ 7   remote_work       250000 non-null  object
+ 8   certifications    250000 non-null  int64 
+ 9   salary            250000 non-null  int64 
+dtypes: int64(4), object(6)
+memory usage: 19.1+ MB
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult">
+<pre>job_title           object
+experience_years     int64
+education_level     object
+skills_count         int64
+industry            object
+company_size        object
+location            object
+remote_work         object
+certifications       int64
+salary               int64
+dtype: object</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput">
+<h2>Data Preprocessing Techniques<a rel="noopener" class="anchor-link" href="#Data-Preprocessing-Techniques">&#182;</a></h2><p>Create entries to clean and blend your data sets as applicable consolidating the two or more data sets into a single collection for inclusion into your visualizations.</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&#160;[7]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor">
+     <div class="CodeMirror cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># convert to int and remove commas</span>
+<span class="n">df1</span><span class="p">[</span><span class="s1">&#39;Median usual weekly earnings ($)&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df1</span><span class="p">[</span><span class="s1">&#39;Median usual weekly earnings ($)&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+
+<span class="c1"># convert weekly to annual to match salaries</span>
+<span class="n">df1</span><span class="p">[</span><span class="s1">&#39;avg_income&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df1</span><span class="p">[</span><span class="s1">&#39;Median usual weekly earnings ($)&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="mi">52</span>
+
+<span class="c1"># make sure its an int</span>
+<span class="n">df1</span><span class="p">[</span><span class="s1">&#39;avg_income&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df1</span><span class="p">[</span><span class="s1">&#39;avg_income&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+
+<span class="n">df1</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">df1</span><span class="o">.</span><span class="n">dtypes</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult">
+<pre>Educational attainment               object
+Median usual weekly earnings ($)      int64
+Unemployment rate (%)               float64
+avg_income                            int64
+dtype: object</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&#160;[8]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor">
+     <div class="CodeMirror cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># rename to match df2</span>
+<span class="n">df1</span> <span class="o">=</span> <span class="n">df1</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;Educational attainment&#39;</span> <span class="p">:</span> <span class="s1">&#39;education_level&#39;</span><span class="p">})</span>
+
+<span class="c1"># drop Total row as it isn&#39;t needed</span>
+<span class="n">edu_df</span> <span class="o">=</span> <span class="n">df1</span><span class="p">[</span><span class="o">~</span><span class="n">df1</span><span class="p">[</span><span class="s1">&#39;education_level&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s1">&#39;Total&#39;</span><span class="p">])]</span>
+
+<span class="c1"># match education levels</span>
+<span class="n">mapping</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;Doctoral degree&#39;</span> <span class="p">:</span> <span class="s1">&#39;PhD&#39;</span><span class="p">,</span>
+    <span class="s2">&quot;Master&#39;s degree&quot;</span> <span class="p">:</span> <span class="s1">&#39;Master&#39;</span><span class="p">,</span>
+    <span class="s2">&quot;Bachelor&#39;s degree&quot;</span> <span class="p">:</span> <span class="s1">&#39;Bachelor&#39;</span><span class="p">,</span>
+    <span class="s2">&quot;Associate&#39;s degree&quot;</span> <span class="p">:</span> <span class="s1">&#39;Diploma&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;High school diploma&#39;</span> <span class="p">:</span> <span class="s1">&#39;High School&#39;</span>
+    
+<span class="p">}</span>
+
+<span class="n">edu_df</span><span class="p">[</span><span class="s1">&#39;education_level&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">edu_df</span><span class="p">[</span><span class="s1">&#39;education_level&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">mapping</span><span class="p">)</span>
+
+<span class="n">edu_df</span> <span class="o">=</span> <span class="n">edu_df</span><span class="p">[</span><span class="o">~</span><span class="n">edu_df</span><span class="p">[</span><span class="s1">&#39;education_level&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s1">&#39;Less than a high school diploma&#39;</span><span class="p">,</span>
+                                                <span class="s1">&#39;Some college, no degree&#39;</span><span class="p">])]</span>
+
+<span class="c1"># remove un-needed column</span>
+<span class="n">edu_df</span> <span class="o">=</span> <span class="n">edu_df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Median usual weekly earnings ($)&#39;</span><span class="p">])</span>
+
+<span class="n">edu_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+
+<span class="c1"># while this is a small data set, I believe it is highly valuable in connection to my second data set</span>
+<span class="c1"># this is sourced from the US Bureau of Labor Statistics</span>
+<span class="c1"># https://www.bls.gov/emp/tables/unemployment-earnings-education.htm</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output">
+<pre>/tmp/ipykernel_286/2646221785.py:17: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  edu_df[&#39;education_level&#39;] = edu_df[&#39;education_level&#39;].replace(mapping)
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult">
+<div>
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>education_level</th>
+      <th>Unemployment rate (%)</th>
+      <th>avg_income</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>PhD</td>
+      <td>1.2</td>
+      <td>118456</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Professional degree</td>
+      <td>1.3</td>
+      <td>122876</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Master</td>
+      <td>2.2</td>
+      <td>95680</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Bachelor</td>
+      <td>2.5</td>
+      <td>80236</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Diploma</td>
+      <td>2.8</td>
+      <td>57148</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>High School</td>
+      <td>4.2</td>
+      <td>48360</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&#160;[9]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor">
+     <div class="CodeMirror cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">profile1</span> <span class="o">=</span> <span class="n">ProfileReport</span><span class="p">(</span><span class="n">edu_df</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Education Profile Report&quot;</span><span class="p">)</span> 
+<span class="n">profile1</span><span class="o">.</span><span class="n">to_notebook_iframe</span><span class="p">()</span> 
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output">
+<pre>Summarize dataset:   0%|          | 0/5 [00:00&lt;?, ?it/s]</pre>
+</div>
+
+</div>
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output">
+<pre>
+100%|██████████| 3/3 [00:00&lt;00:00, 132.66it/s]
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output">
+<pre>Generate report structure:   0%|          | 0/1 [00:00&lt;?, ?it/s]</pre>
+</div>
+
+</div>
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output">
+<pre>Render HTML:   0%|          | 0/1 [00:00&lt;?, ?it/s]</pre>
+</div>
+
+</div>
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output">
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&#160;[10]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor">
+     <div class="CodeMirror cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Filter to only United States locations that are on site</span>
+<span class="n">df2</span> <span class="o">=</span> <span class="n">df2</span><span class="p">[</span><span class="n">df2</span><span class="p">[</span><span class="s1">&#39;location&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;USA&#39;</span><span class="p">)]</span>
+
+<span class="n">salary_df</span> <span class="o">=</span> <span class="n">df2</span><span class="p">[</span><span class="n">df2</span><span class="p">[</span><span class="s1">&#39;remote_work&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;No&#39;</span><span class="p">]</span>
+
+<span class="c1"># remove columns I don&#39;t plan to utilize for ease of evaluation</span>
+<span class="n">salary_df</span> <span class="o">=</span> <span class="n">salary_df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;skills_count&#39;</span><span class="p">,</span> <span class="s1">&#39;company_size&#39;</span><span class="p">,</span> <span class="s1">&#39;remote_work&#39;</span><span class="p">,</span> <span class="s1">&#39;certifications&#39;</span><span class="p">,</span> <span class="s1">&#39;location&#39;</span><span class="p">])</span>
+
+<span class="n">salary_df</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span> <span class="o">=</span> <span class="kc">True</span> <span class="p">)</span>
+
+<span class="n">salary_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+
+<span class="c1"># this is my primary data set that I wanted to combine with meaningful statistics</span>
+<span class="c1"># I wish these had been at a state level rather than a national level, but having education, industry, salary is useful</span>
+<span class="c1"># This is sourced from Kaggle as &#39;Job Salary Prediction Data Set&#39; by Aleesha Nadeem</span>
+<span class="c1"># https://www.kaggle.com/datasets/nalisha/job-salary-prediction-dataset</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult">
+<div>
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>job_title</th>
+      <th>experience_years</th>
+      <th>education_level</th>
+      <th>industry</th>
+      <th>salary</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>5</th>
+      <td>AI Engineer</td>
+      <td>0</td>
+      <td>High School</td>
+      <td>Education</td>
+      <td>180351</td>
+    </tr>
+    <tr>
+      <th>102</th>
+      <td>Cloud Engineer</td>
+      <td>16</td>
+      <td>PhD</td>
+      <td>Government</td>
+      <td>230499</td>
+    </tr>
+    <tr>
+      <th>118</th>
+      <td>AI Engineer</td>
+      <td>3</td>
+      <td>Diploma</td>
+      <td>Technology</td>
+      <td>179209</td>
+    </tr>
+    <tr>
+      <th>183</th>
+      <td>Data Scientist</td>
+      <td>20</td>
+      <td>Diploma</td>
+      <td>Manufacturing</td>
+      <td>202015</td>
+    </tr>
+    <tr>
+      <th>187</th>
+      <td>Cloud Engineer</td>
+      <td>6</td>
+      <td>Diploma</td>
+      <td>Technology</td>
+      <td>185816</td>
+    </tr>
+    <tr>
+      <th>188</th>
+      <td>Data Analyst</td>
+      <td>5</td>
+      <td>High School</td>
+      <td>Manufacturing</td>
+      <td>106642</td>
+    </tr>
+    <tr>
+      <th>250</th>
+      <td>Frontend Developer</td>
+      <td>3</td>
+      <td>Diploma</td>
+      <td>Manufacturing</td>
+      <td>138279</td>
+    </tr>
+    <tr>
+      <th>306</th>
+      <td>Data Scientist</td>
+      <td>7</td>
+      <td>Bachelor</td>
+      <td>Finance</td>
+      <td>151186</td>
+    </tr>
+    <tr>
+      <th>377</th>
+      <td>Data Analyst</td>
+      <td>11</td>
+      <td>High School</td>
+      <td>Manufacturing</td>
+      <td>104752</td>
+    </tr>
+    <tr>
+      <th>539</th>
+      <td>Data Scientist</td>
+      <td>8</td>
+      <td>Master</td>
+      <td>Media</td>
+      <td>228422</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&#160;[11]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor">
+     <div class="CodeMirror cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">profile2</span> <span class="o">=</span> <span class="n">ProfileReport</span><span class="p">(</span><span class="n">salary_df</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Career Profile Report&quot;</span><span class="p">)</span> 
+<span class="n">profile2</span><span class="o">.</span><span class="n">to_notebook_iframe</span><span class="p">()</span> 
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output">
+<pre>Summarize dataset:   0%|          | 0/5 [00:00&lt;?, ?it/s]</pre>
+</div>
+
+</div>
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output">
+<pre>
+  0%|          | 0/5 [00:00&lt;?, ?it/s]
+100%|██████████| 5/5 [00:00&lt;00:00, 30.40it/s]
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output">
+<pre>Generate report structure:   0%|          | 0/1 [00:00&lt;?, ?it/s]</pre>
+</div>
+
+</div>
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output">
+<pre>Render HTML:   0%|          | 0/1 [00:00&lt;?, ?it/s]</pre>
+</div>
+
+</div>
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output">
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&#160;[12]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor">
+     <div class="CodeMirror cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Combine the two data sets to use in visualizations</span>
+<span class="n">merged_df</span> <span class="o">=</span> <span class="n">salary_df</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">edu_df</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;education_level&#39;</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">)</span>
+
+<span class="n">merged_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult">
+<div>
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>job_title</th>
+      <th>experience_years</th>
+      <th>education_level</th>
+      <th>industry</th>
+      <th>salary</th>
+      <th>Unemployment rate (%)</th>
+      <th>avg_income</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>AI Engineer</td>
+      <td>0</td>
+      <td>High School</td>
+      <td>Education</td>
+      <td>180351</td>
+      <td>4.2</td>
+      <td>48360</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Cloud Engineer</td>
+      <td>16</td>
+      <td>PhD</td>
+      <td>Government</td>
+      <td>230499</td>
+      <td>1.2</td>
+      <td>118456</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>AI Engineer</td>
+      <td>3</td>
+      <td>Diploma</td>
+      <td>Technology</td>
+      <td>179209</td>
+      <td>2.8</td>
+      <td>57148</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Data Scientist</td>
+      <td>20</td>
+      <td>Diploma</td>
+      <td>Manufacturing</td>
+      <td>202015</td>
+      <td>2.8</td>
+      <td>57148</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Cloud Engineer</td>
+      <td>6</td>
+      <td>Diploma</td>
+      <td>Technology</td>
+      <td>185816</td>
+      <td>2.8</td>
+      <td>57148</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput">
+<h2>Data Visualizations<a rel="noopener" class="anchor-link" href="#Data-Visualizations">&#182;</a></h2><p>Create entries to visualize your data using appropriate visualization types to reveal key trends within the data collection. Integrate multiple data attributes into visualizations using appropriate techniques to derive key insights from your visualizations. In your data visualizations, you will use multi-level data modeling practices to refine your visualizations. Your visualizations should include a high-level visualization that provides a broad overview of the data for one of your two stakeholders, as well as a detailed, insight-focused visualization that highlights the key findings for the other of your two stakeholders.</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&#160;[13]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor">
+     <div class="CodeMirror cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+
+<span class="c1"># For students / job seekers (stakeholders 1) simple bar chart</span>
+<span class="n">plot_df</span> <span class="o">=</span> <span class="n">merged_df</span><span class="p">[[</span><span class="s1">&#39;education_level&#39;</span><span class="p">,</span> <span class="s1">&#39;avg_income&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">()</span>
+
+<span class="c1"># sort lowest income to highest</span>
+<span class="n">plot_df</span> <span class="o">=</span> <span class="n">plot_df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;avg_income&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+
+<span class="c1"># set colors</span>
+<span class="n">colors</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">color_palette</span><span class="p">(</span><span class="s2">&quot;colorblind&quot;</span><span class="p">,</span> <span class="n">n_colors</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">plot_df</span><span class="p">))</span>
+
+
+<span class="c1"># bar chart for avg income vs education level</span>
+<span class="n">plot_df</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;education_level&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;avg_income&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Education vs Income&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">colors</span><span class="p">)</span>
+
+<span class="c1"># remove the legend</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span><span class="o">.</span><span class="n">remove</span><span class="p">()</span>
+
+<span class="c1"># add average line</span>
+<span class="n">avg_line</span> <span class="o">=</span> <span class="n">plot_df</span><span class="p">[</span><span class="s1">&#39;avg_income&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">avg_line</span><span class="p">,</span> <span class="n">linestyle</span> <span class="o">=</span> <span class="s1">&#39;--&#39;</span><span class="p">)</span>
+
+<span class="c1"># add avg line label</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="o">-</span><span class="mf">.4</span><span class="p">,</span> <span class="n">avg_line</span> <span class="o">+</span> <span class="mi">1000</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;Avg: $</span><span class="si">{</span><span class="n">avg_line</span><span class="si">:</span><span class="s2">,.0f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">)</span>
+
+<span class="c1"># add value labels</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">v</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">plot_df</span><span class="p">[</span><span class="s1">&#39;avg_income&#39;</span><span class="p">]):</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">v</span> <span class="o">+</span> <span class="mi">1000</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">v</span><span class="si">:</span><span class="s2">,.0f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">ha</span> <span class="o">=</span> <span class="s1">&#39;center&#39;</span><span class="p">)</span>
+    
+<span class="c1"># labels</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Education vs Income&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Education Level&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Average Annual Income ($)&#39;</span><span class="p">)</span>
+
+<span class="c1"># rotate x labels</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span>
+
+<span class="c1"># save figure</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;data/output/simple_bar.png&#39;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output">
+<pre>&lt;Figure size 800x500 with 0 Axes&gt;</pre>
+</div>
+
+</div>
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+<div class="jp-RenderedImage jp-OutputArea-output">
+<img src="javascript://"/>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&#160;[14]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor">
+     <div class="CodeMirror cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># For students / job seekers (stakeholders 1) grouped more technical bar chart</span>
+
+<span class="c1"># &lt;= 5 years experience</span>
+<span class="n">early_df</span> <span class="o">=</span> <span class="n">merged_df</span><span class="p">[</span><span class="n">merged_df</span><span class="p">[</span><span class="s1">&#39;experience_years&#39;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">5</span><span class="p">]</span>
+
+<span class="n">plot_df</span> <span class="o">=</span> <span class="n">early_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;education_level&#39;</span><span class="p">)[[</span><span class="s1">&#39;salary&#39;</span><span class="p">,</span> <span class="s1">&#39;avg_income&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+
+<span class="c1"># rename columns for plot</span>
+<span class="n">plot_df</span> <span class="o">=</span> <span class="n">plot_df</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;salary&#39;</span> <span class="p">:</span> <span class="s1">&#39;Early Career Salary&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;avg_income&#39;</span> <span class="p">:</span> <span class="s1">&#39;National Average Income&#39;</span>
+<span class="p">})</span>
+
+<span class="c1"># fix ordering (should be lowest to highest edu)</span>
+<span class="n">order</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;High School&#39;</span><span class="p">,</span> <span class="s1">&#39;Diploma&#39;</span><span class="p">,</span> <span class="s1">&#39;Bachelor&#39;</span><span class="p">,</span> <span class="s1">&#39;Master&#39;</span><span class="p">,</span> <span class="s1">&#39;PhD&#39;</span><span class="p">]</span>
+<span class="n">plot_df</span> <span class="o">=</span> <span class="n">plot_df</span><span class="o">.</span><span class="n">reindex</span><span class="p">(</span><span class="n">order</span><span class="p">)</span>
+
+<span class="c1"># set colors</span>
+<span class="n">colors</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">color_palette</span><span class="p">(</span><span class="s2">&quot;colorblind&quot;</span><span class="p">,</span> <span class="n">n_colors</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">plot_df</span><span class="p">))</span>
+
+<span class="c1"># income bar chart</span>
+<span class="n">plot_df</span><span class="p">[[</span><span class="s1">&#39;Early Career Salary&#39;</span><span class="p">,</span> <span class="s1">&#39;National Average Income&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="n">colors</span><span class="p">)</span>
+
+
+<span class="c1"># Add context note</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figtext</span><span class="p">(</span><span class="mf">.5</span><span class="p">,</span> <span class="o">-</span><span class="mf">.5</span><span class="p">,</span> <span class="s1">&#39;Note: Dataset primarily includes technical roles, which typically offer higher salaries than national averages.&#39;</span><span class="p">,</span>
+           <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">)</span>
+
+<span class="c1"># labels</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Income ($)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Education Level&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Early Tech Career Salary vs National Average Income by Education Level&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># save figure</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;data/output/grouped_bar.png&#39;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+<div class="jp-RenderedImage jp-OutputArea-output">
+<img src="javascript://"/>
+</div>
+
+</div>
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output">
+<pre>&lt;Figure size 640x480 with 0 Axes&gt;</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&#160;[15]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor">
+     <div class="CodeMirror cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># For company / hiring team (stakeholders 2) scatterplot</span>
+
+<span class="n">plot_df</span> <span class="o">=</span> <span class="n">merged_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;experience_years&#39;</span><span class="p">)[</span><span class="s1">&#39;salary&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">agg</span><span class="p">(</span>
+    <span class="n">mean</span><span class="o">=</span><span class="s1">&#39;mean&#39;</span><span class="p">,</span>
+    <span class="n">q1</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.25</span><span class="p">),</span>
+    <span class="n">q3</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.75</span><span class="p">)</span>
+
+<span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+
+<span class="c1"># set colors</span>
+<span class="n">colors</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">color_palette</span><span class="p">(</span><span class="s2">&quot;colorblind&quot;</span><span class="p">,</span> <span class="n">n_colors</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">plot_df</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">plot_df</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">plot_df</span><span class="p">[</span><span class="s1">&#39;mean&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Average Salary&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span><span class="n">plot_df</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">plot_df</span><span class="p">[</span><span class="s1">&#39;q1&#39;</span><span class="p">],</span> <span class="n">plot_df</span><span class="p">[</span><span class="s1">&#39;q3&#39;</span><span class="p">],</span> <span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.15</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">colors</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Typical Salary Range (IQR)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span> <span class="o">=</span> <span class="s1">&#39;upper left&#39;</span><span class="p">)</span>
+    
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Salary Growth and Typical Range by Years of Experience&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Years of Experience&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Salary ($)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">100000</span><span class="p">,</span> <span class="mi">250000</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># save figure</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;data/output/IQR_scatter.png&#39;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+<div class="jp-RenderedImage jp-OutputArea-output">
+<img src="javascript://"/>
+</div>
+
+</div>
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output">
+<pre>&lt;Figure size 640x480 with 0 Axes&gt;</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&#160;[16]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor">
+     <div class="CodeMirror cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># For company / hiring team (stakeholders 2) boxplot</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+
+<span class="c1"># fix ordering (should be lowest to highest edu)</span>
+<span class="n">order</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;High School&#39;</span><span class="p">,</span> <span class="s1">&#39;Diploma&#39;</span><span class="p">,</span> <span class="s1">&#39;Bachelor&#39;</span><span class="p">,</span> <span class="s1">&#39;Master&#39;</span><span class="p">,</span> <span class="s1">&#39;PhD&#39;</span><span class="p">]</span>
+
+<span class="c1"># set edu level order</span>
+<span class="n">merged_df</span><span class="p">[</span><span class="s1">&#39;education_level&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Categorical</span><span class="p">(</span>
+    <span class="n">merged_df</span><span class="p">[</span><span class="s1">&#39;education_level&#39;</span><span class="p">],</span>
+    <span class="n">categories</span> <span class="o">=</span> <span class="n">order</span><span class="p">,</span>
+    <span class="n">ordered</span> <span class="o">=</span> <span class="kc">True</span>
+
+<span class="p">)</span>
+
+<span class="c1">#group salaries in order by education</span>
+<span class="n">groups</span> <span class="o">=</span> <span class="n">merged_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;education_level&#39;</span><span class="p">)[</span><span class="s1">&#39;salary&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">groups</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="n">groups</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">showfliers</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">patch_artist</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+            <span class="n">boxprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;#6baed6&#39;</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">),</span> <span class="n">medianprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">))</span>
+
+<span class="c1"># labels</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Tech Salary Distribution by Education Level&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Education Level&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Salary ($)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span>
+
+<span class="c1"># add grid</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">linestyle</span> <span class="o">=</span> <span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.4</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># save figure</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;data/output/box_whisker.png&#39;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+<div class="jp-RenderedImage jp-OutputArea-output">
+<img src="javascript://"/>
+</div>
+
+</div>
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output">
+<pre>&lt;Figure size 640x480 with 0 Axes&gt;</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<script type="module" src="https://s.brightspace.com/lib/bsi/2026.3.233/unbundled/mathjax.js"></script><script type="text/javascript">document.addEventListener('DOMContentLoaded', function() {
+					if (document.querySelector('math, .d2l-element, .d2l-cplus-layout') || /\$\$|\\\(|\\\[|\\begin{|\\ref{|\\eqref{/.test(document.body.innerHTML)) {
+						document.querySelectorAll('mspace[linebreak="newline"]').forEach(elm => {
+							elm.setAttribute('style', 'display: block; height: 0.5rem;');
+						});
+
+						document.querySelectorAll('math mmultiscripts > none').forEach(elm => {
+							const mrow = document.createElementNS('http://www.w3.org/1998/Math/MathML', 'mrow');
+							elm.replaceWith(mrow);
+						});
+
+						window.D2L.MathJax.loadMathJax({
+							outputScale: 1.5,
+							renderLatex: false,
+							enableMML3Support: false
+						});
+					}
+				});</script><script type="module" src="https://s.brightspace.com/lib/bsi/2026.3.233/unbundled/prism.js"></script><script type="text/javascript">document.addEventListener('DOMContentLoaded', function() {
+					document.querySelectorAll('.d2l-code').forEach(code => {
+						window.D2L.Prism.formatCodeElement(code, false);
+					});
+				});</script><script type="module" src="https://s.brightspace.com/lib/bsi/2026.3.233/unbundled/embeds.js"></script><script type="text/javascript">document.addEventListener('DOMContentLoaded', function() {
+					window.D2L.EmbedRenderer.renderEmbeds(document.body);
+				});</script></body></html>
